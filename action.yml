@@ -11,6 +11,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ secrets.LURAPH_KEY }}
     - ${{ inputs.inputFile }}
     - ${{ inputs.outputFile }}
