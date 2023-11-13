@@ -7,9 +7,6 @@ inputs:
   outputFile:
     description: 'Path to Output File'
     required: true
-  apiKey:
-    description: 'API KEY for Luraph'
-    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -17,4 +14,3 @@ runs:
     - ${{ secrets.LURAPH_KEY }}
     - ${{ inputs.inputFile }}
     - ${{ inputs.outputFile }}
-    - ${{ inputs.apiKey }}
