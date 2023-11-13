@@ -4,7 +4,7 @@ FROM node:14
 # Copy package.json and package-lock.json to the working directory
 #COPY package*.json /app/luaraph
 COPY entrypoint.sh /entrypoint.sh
-
+COPY package.json /package.json
 
 # Install the application dependencies
 RUN npm install
