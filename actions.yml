@@ -8,7 +8,7 @@ inputs:
     description: 'Path to Output File'
     required: true
   apiKey:
-    description: 'API KEU'
+    description: 'API KEY for Luraph'
     required: true
 runs:
   using: 'docker'

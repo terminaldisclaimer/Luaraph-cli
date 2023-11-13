@@ -10,7 +10,7 @@ COPY package.json /package.json
 RUN npm install
 
 # Copy the rest of the application code to the working directory
-COPY . /app/luaraph
+COPY . /app/luraph
 
 # Define the command to run the application with inputfile and outputfile arguments
 #CMD [ "node", "app.js","-a", "$API_KEY", "-i", "$INPUT_FILE", "-o", "$OUTPUT_FILE" ]
