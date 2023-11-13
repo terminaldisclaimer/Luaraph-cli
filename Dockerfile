@@ -13,5 +13,5 @@ RUN npm install
 COPY . /app/luraph
 
 # Define the command to run the application with inputfile and outputfile arguments
-#CMD [ "node", "app.js","-a", "$API_KEY", "-i", "$INPUT_FILE", "-o", "$OUTPUT_FILE" ]
+#CMD [ "node", "app.js","-a", "$API_KEY", "-i", "$INPUT_INPUTFILE", "-o", "$INPUT_OUTPUTFILE" ]
 ENTRYPOINT ["/entrypoint.sh"]
