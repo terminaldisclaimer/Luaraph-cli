@@ -1,0 +1,20 @@
+name: 'Obsfucate Lua file'
+description: 'Obsfucates the specified lua file using luraph'
+inputs:
+  inputFile:
+    description: 'Path to Input File to Obsfucate'
+    required: true
+  outputFile:
+    description: 'Path to Output File'
+    required: true
+  apiKey:
+    description: 'API KEU'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ secrets.LURAPH_KEY }}
+    - ${{ inputs.inputFile }}
+    - ${{ inputs.outputFile }}
+    - ${{ inputs.apiKey }}

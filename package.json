@@ -1,0 +1,16 @@
+{
+  "name": "luaraph-cli",
+  "version": "1.0.0",
+  "description": "A cli for luaraph",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "NXGENAV Technologies, LLC",
+  "license": "ISC",
+  "dependencies": {
+    "luraph": "^1.0.2",
+    "yargs": "^17.7.2"
+  }
+}
